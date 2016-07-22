@@ -1,0 +1,61 @@
+/* ANIMATIONS
+============================================================================= */
+/* leaving animations  */
+/* FadeOut */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@keyframes FadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* entering animations */
+/* FadeIn */
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* PAGE TRANSITIONS
+============================================================================= */
+.page {
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ng-enter {
+  z-index: 8888;
+}
+.ng-leave {
+  z-index: 9999;
+}
+.page-main.ng-enter {
+  animation: FadeIn 0.3s both ease-in 0.7s;
+}
+.page-main.ng-leave {
+  animation: FadeOut 0.3s both ease-in;
+}
+.page-login.ng-enter {
+  animation: FadeIn 0.3s both ease-in 0.7s;
+}
+.page-login.ng-leave {
+  animation: FadeOut 0.3s both ease-in;
+}
+/* FONTS
+============================================================================= */
+html,
+body {
+  font-family: 'Nanum Myeongjo';
+}
+/* COMMONS
+============================================================================= */
+/* COMPONENTS
+============================================================================= */

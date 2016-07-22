@@ -1,0 +1,28 @@
+/* PAGE TRANSITIONS
+============================================================================= */
+
+@animationDuration: 0.3s;
+@delayDuration: 0.7s;
+
+.page {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.ng-enter { z-index: 8888; }
+.ng-leave { z-index: 9999; }
+
+.page-main.ng-enter {
+    animation: FadeIn @animationDuration both ease-in @delayDuration;
+}
+.page-main.ng-leave {
+    animation: FadeOut @animationDuration both ease-in;
+}
+.page-login.ng-enter {
+    animation: FadeIn @animationDuration both ease-in @delayDuration;
+}
+.page-login.ng-leave {
+    animation: FadeOut @animationDuration both ease-in;
+}
