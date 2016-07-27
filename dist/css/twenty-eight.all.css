@@ -43,6 +43,12 @@
 .page-main.ng-leave {
   animation: FadeOut 0.3s both ease-in;
 }
+.page-error.ng-enter {
+  animation: FadeIn 0.3s both ease-in 0.7s;
+}
+.page-eeror.ng-leave {
+  animation: FadeOut 0.3s both ease-in;
+}
 .page-login.ng-enter {
   animation: FadeIn 0.3s both ease-in 0.7s;
 }
